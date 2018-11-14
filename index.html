@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Life</title>
+    <style type="text/css">
+    	.menu {
+		    width: 150px;
+		    height: 200px;
+		    float: left;
+		    background-color: yellow;
+		}
+
+		.button {
+			width: 90%;
+		}
+
+		.input {
+			width: 86%;
+		}
+    </style>
+</head>
+<body>
+	<div class="menu">
+		<input type="button" class="button" value="Start" id="start" onclick="game.start()">
+		<input type="button" class="button" value="Reset" id="reset" onclick="game.reset()">
+		<b>Input speed</b>
+		<input type="text" class="input" value="15" placeholder="Input speed" id="speed">
+		<b>Input survive rules</b>
+		<input type="text" class="input" value="2 3" placeholder="Input survive rules" id="survive">
+		<b>Input born rules</b>
+		<input type="text" class="input" value="3" placeholder="Input born rules" id="born">
+	</div>
+   
+    <canvas id="field" width='640' height='640'></canvas>       
+    <script src="game.js"></script>	
+</body>
+</html>
